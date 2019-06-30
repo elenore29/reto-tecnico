@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="map" class="map">Hola</div>
+
+  <script src="main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtHf_kOAoa7zPEtUrAkcZPA08ADdShTSw&callback=initMap"
+    async defer></script>
+  <script>
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 43.5293,
+          lng: -5.6773
+        },
+        zoom: 13,
+      });
+      var marker = new google.maps.Marker({
+        position: {
+          lat: 43.542194,
+          lng: -5.676875
+        },
+        map: map,
+        title: 'Acuario de Gijón'
+      });
+    }
+  </script>
+</body>
+
+</html>
