@@ -15,18 +15,20 @@
   </header>
   <div id="map" class="map"></div>
 
-  <section id="selector-box">
-    <p class="title">Filtra por el rating del restaurante</p>
-    <select id="selector">
-      <option selected>Todos</option>
-      <option>5 estrellas</option>
-      <option>4 estrellas</option>
-      <option>3 estrellas</option>
-      <option>2 estrellas</option>
-      <option>1 estrellas</option>
-      <option>0 estrellas</option>
-    </select>
+  <p class="title">Ordenar por rating:</p>
+  <br>
+  <section id="buttons-box">
+    <button class="sort-button" id="rating-des">5-0</button>
+    <button class="sort-button" id="rating-asc">0-5</button>
   </section>
+  <br>
+  <p class="title">Ordenar Alfabeticamente:</p>
+  <br>
+  <section id="buttons-box">
+    <button class="sort-button" id="abc-des">A-Z</button>
+    <button class="sort-button" id="abc-asc">Z-A</button>
+  </section>
+
   <article id="summary"></article>
 
   <script src="main.js"></script>

@@ -78,6 +78,41 @@ h1 {
     text-align: center; 
 }
 
-#selector-box {
-    width: 100%;
+#buttons-box {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.sort-button {
+    width: 45%;
+    background-color: #1CAAFB; 
+    color: white; 
+    border-width: 0px;
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.link-web{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    color: #1CAAFB;
+    text-decoration: none;
+}
+
+.link-web {
+    background-color: #1CAAFB; 
+    padding: 5px; 
+    border-width: 0px; 
+    margin-top: 6px;
+}
+
+.location {
+    background-color: #1CAAFB; 
+    color: white; 
+    padding: 5px; 
+    margin: 5px;
 }
